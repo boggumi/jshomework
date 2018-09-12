@@ -1,0 +1,65 @@
+<!-- 1.alert나오는거 -->
+<!-- 2.로그인을 활용해서 => 5고개 ox 퀴즈 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>bomin's baekmon1dapㅋㅋㅋㅋ</title>
+  </head>
+  <body>
+ <h1>질문에 o혹은 x로 대답해주세용/^-^/</h1>
+  <div class = 'bo-quiz'>
+      <p> 내 주민번호는 990606으로 시작한다
+      <input id='ox1' placeholder="o 또는 x 적기!"/>
+      <button id = 'bo-bnt1'> 확인 </button>
+      </p>
+      <p> 나는 도마뱀에 물려 수술받은적이 있다
+      <input id='ox2' placeholder="o 또는 x 적기!"/>
+      <button id = 'bo-bnt2'> 확인 </button>
+      </p>
+      <p>주량이 소주 3병이 넘는다
+      <input id='ox3' placeholder="o 또는 x 적기!"/>
+      <button id = 'bo-bnt3'> 확인 </button>
+      </p>
+    </div>
+
+    <!-- <input type="button" name="" value="눌러용~"
+    onclick="alert('yes or no')"> -->
+
+    <script type="text/javascript">
+      const quizForm =  document.querySelector('.bo-quiz')
+
+      const ox1Element = document.querySelector('#ox1')
+      const boBnt1 = document.getElementById('bo-bnt1')
+      boBnt1.onclick = function () {
+          if (ox1Element.value === '0') {
+            alert('마자아아야야야야요')
+            quizForm.style.display='none'
+          } else {
+            alert('땡!앵!뻘!')
+          }
+      }
+      const ox2Element = document.querySelector('#ox2')
+      const boBnt2 = document.getElementById('bo-bnt2')
+      boBnt2.onclick = function () {
+        if (ox2Element.value === 'x') {
+          alert('마자아아야야야야요')
+          quizForm.style.display='none'
+        } else {
+          alert('땡!앵!뻘!')
+        }
+      }
+      const ox3Element = document.querySelector('#ox3')
+      const boBnt3 = document.getElementById('bo-bnt3')
+      if (ox3Element.value === 'x') {
+        alert('마자아아야야야야요')
+        quizForm.style.display='none'
+      } else {
+        alert('땡!앵!뻘!')
+      }
+
+
+    </script>
+
+  </body>
+</html>
